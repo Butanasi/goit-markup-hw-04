@@ -177,7 +177,11 @@ footer {
   margin-right: 10px;
   justify-content: center;
 
-  color: var(--color-text);
+  fill: var(--color-text);
+}
+.links:focus .icon-link,
+.links:hover .icon-link {
+  fill: var(--color-link);
 }
 
 /*=============END HEADER=============*/
@@ -243,7 +247,7 @@ footer {
 .rules-item:last-child {
   margin-right: 0;
 }
-.icon-rules {
+.rules-box {
   display: flex;
   width: 270px;
   height: 120px;
@@ -252,10 +256,7 @@ footer {
   margin-bottom: 30px;
   background-color: var(--background);
 }
-.icon-rulse-all {
-  width: 70px;
-  height: 70px;
-}
+
 .rules-title {
   margin-bottom: 10px;
 
@@ -341,9 +342,9 @@ footer {
 }
 .customers-list {
   display: flex;
-  justify-content: space-between;
 }
-.customers-item {
+.customers-item + .customers-item {
+  margin-left: 30px;
 }
 .customers-link {
   display: flex;
@@ -479,21 +480,22 @@ footer {
 }
 .join {
   margin-left: 70px;
-  width: 206px;
-  height: 80px;
 }
 .join-title {
   color: var(--color-text-two);
   margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: left;
 }
 .join-list {
+}
+.join-item + .join-item {
+  margin-left: 10px;
 }
 .join-link {
   background-color: #44454e;
