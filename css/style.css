@@ -92,7 +92,6 @@ footer {
 .social-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 .social-link {
   display: flex;
@@ -249,10 +248,11 @@ footer {
 }
 .rules-box {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   background-color: var(--background);
 }
@@ -270,6 +270,10 @@ footer {
   margin-bottom: 0;
 
   line-height: 1.71;
+}
+.icon-rules {
+  width: 70px;
+  height: 70px;
 }
 /*=============END RULES=============*/
 /*=============WHAT WE DO=============*/
@@ -316,7 +320,7 @@ footer {
 }
 .our-team-box {
   text-align: center;
-  padding: 30px 32px 0 32px;
+  padding: 30px 32px;
 }
 
 .our-team-name {
@@ -426,11 +430,12 @@ footer {
 }
 .poster {
 }
-.galery-link {
+.gallery-link {
+  display: block;
   text-decoration: none;
 }
-.gallery-item:hover,
-.gallery-item:focus {
+.gallery-link:hover,
+.gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
